@@ -3,4 +3,4 @@
 
 Custom loading animation
 
-![alt text](http://i44.tinypic.com/i4jt4k.png "Logo Title Text 1")
+![alt text](http://i43.tinypic.com/239p4l.jpg "Screen shot")
