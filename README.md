@@ -5,9 +5,10 @@ Custom loading animation
 
 | Possibility        | Yes           | No  |
 | ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| IOS 6/7      | 1 | 0 |
+| Change color property     | 1 | 0 |
+| Animation change speed      | 1 | 0 |
+| After appliaction background mode     | 0 | 1 |
 
 
 ![alt text](http://i43.tinypic.com/239p4l.jpg "Screen shot")
