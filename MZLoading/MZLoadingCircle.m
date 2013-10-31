@@ -1,6 +1,6 @@
 //
 //  MZLoadingCircle.m
-//  loadingHUD
+//  MZLoading
 //
 //  Created by Serghei Mazur on 10/31/13.
 //  Copyright (c) 2013 Serghei Mazur. All rights reserved.
@@ -26,7 +26,7 @@
 - (void)drawInContext:(CGContextRef)theContext {
     
     //// Oval 1 Drawing
-
+    
     UIBezierPath* ovalPath = [UIBezierPath bezierPath];
     [ovalPath addArcWithCenter: CGPointMake(CGRectGetMidX(ovalRect), CGRectGetMidY(ovalRect)) radius: CGRectGetWidth(ovalRect) / 2 startAngle: 190 * M_PI/180 endAngle: 260 * M_PI/180 clockwise: YES];
     
@@ -247,7 +247,7 @@
     
 }
 
--(void)stopAnimation {
+-(void)viewWillDisappear:(BOOL)animated{
     [customLayer_ removeAllAnimations];
     [customLayer2_ removeAllAnimations];
     [customLayer3_ removeAllAnimations];

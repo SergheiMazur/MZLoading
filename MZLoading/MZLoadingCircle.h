@@ -1,6 +1,6 @@
 //
 //  MZLoadingCircle.h
-//  loadingHUD
+//  MZLoading
 //
 //  Created by Serghei Mazur on 10/31/13.
 //  Copyright (c) 2013 Serghei Mazur. All rights reserved.
@@ -23,7 +23,5 @@ CustomLayer3 *customLayer3_;
 @property (weak,nonatomic) UIColor *colorCustomLayer;
 @property (weak,nonatomic) UIColor *colorCustomLayer2;
 @property (weak,nonatomic) UIColor *colorCustomLayer3;
-
--(void)stopAnimation;
 
 @end

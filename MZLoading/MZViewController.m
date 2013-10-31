@@ -39,11 +39,10 @@
         loadingCircle = [[MZLoadingCircle alloc]initWithNibName:nil bundle:nil];
         loadingCircle.view.backgroundColor = [UIColor clearColor];
         
-        /*Colors for layers
-        loadingCircle.colorCustomLayer = [UIColor redColor];
-        loadingCircle.colorCustomLayer2 = [UIColor blueColor];
-        loadingCircle.colorCustomLayer3 = [UIColor yellowColor];
-        */
+        //Colors for layers
+        loadingCircle.colorCustomLayer = [UIColor colorWithRed:0 green:0.4 blue:0 alpha:1];
+        loadingCircle.colorCustomLayer2 = [UIColor colorWithRed:0 green:0.4 blue:0 alpha:0.65];
+        loadingCircle.colorCustomLayer3 = [UIColor colorWithRed:0 green:0.4 blue:0 alpha:0.4];
         
         int size = 100;
         
@@ -60,7 +59,6 @@
 
 -(void)hideLoadingMode {
     if (loadingCircle) {
-        [loadingCircle stopAnimation];
         [loadingCircle.view removeFromSuperview];
         loadingCircle = nil;
     }
