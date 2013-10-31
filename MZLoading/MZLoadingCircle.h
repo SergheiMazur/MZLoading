@@ -1,5 +1,5 @@
 //
-//  BSTESTViewController.h
+//  MZLoadingCircle.h
 //  loadingHUD
 //
 //  Created by Serghei Mazur on 10/31/13.
@@ -14,7 +14,7 @@
 @class CustomLayer2;
 @class CustomLayer3;
 
-@interface BSLoadingCircle : UIViewController{
+@interface MZLoadingCircle : UIViewController{
 CustomLayer *customLayer_;
 CustomLayer2 *customLayer2_;
 CustomLayer3 *customLayer3_;

@@ -1,12 +1,12 @@
 //
-//  BSTESTViewController.m
+//  MZLoadingCircle.m
 //  loadingHUD
 //
 //  Created by Serghei Mazur on 10/31/13.
 //  Copyright (c) 2013 Serghei Mazur. All rights reserved.
 //
 
-#import "BSLoadingCircle.h"
+#import "MZLoadingCircle.h"
 
 
 @interface CustomLayer : CALayer {
@@ -15,13 +15,13 @@
 
 @property (assign) CGRect ovalRect;
 @property (assign) int lineWidth;
-@property (assign) UIColor *colorLine;
+@property (nonatomic) UIColor *colorLine;
 
 @end
 
 @implementation CustomLayer
 
-@synthesize ovalRect,lineWidth;
+@synthesize ovalRect,lineWidth,colorLine;
 
 - (void)drawInContext:(CGContextRef)theContext {
     
@@ -52,7 +52,7 @@
     
     
     CGContextSetLineWidth(theContext,lineWidth);
-    CGContextSetStrokeColorWithColor(theContext, _colorLine.CGColor);
+    CGContextSetStrokeColorWithColor(theContext, colorLine.CGColor);
     CGContextStrokePath(theContext);
 }
 
@@ -64,13 +64,13 @@
 
 @property (assign) CGRect ovalRect;
 @property (assign) int lineWidth;
-@property (assign) UIColor *colorLine;
+@property (nonatomic) UIColor *colorLine;
 
 @end
 
 @implementation CustomLayer2
 
-@synthesize ovalRect,lineWidth;
+@synthesize ovalRect,lineWidth,colorLine;
 
 - (void)drawInContext:(CGContextRef)theContext
 {
@@ -101,7 +101,7 @@
     
     
     CGContextSetLineWidth(theContext,lineWidth);
-    CGContextSetStrokeColorWithColor(theContext, _colorLine.CGColor);
+    CGContextSetStrokeColorWithColor(theContext, colorLine.CGColor);
     CGContextStrokePath(theContext);}
 
 @end
@@ -111,13 +111,13 @@
 
 @property (assign) CGRect ovalRect;
 @property (assign) int lineWidth;
-@property (assign) UIColor *colorLine;
+@property (nonatomic) UIColor *colorLine;
 
 @end
 
 @implementation CustomLayer3
 
-@synthesize ovalRect,lineWidth;
+@synthesize ovalRect,lineWidth,colorLine;
 
 
 - (void)drawInContext:(CGContextRef)theContext
@@ -148,18 +148,18 @@
     CGContextAddPath(theContext, oval4Path.CGPath);
     
     CGContextSetLineWidth(theContext,lineWidth);
-    CGContextSetStrokeColorWithColor(theContext, _colorLine.CGColor);
+    CGContextSetStrokeColorWithColor(theContext, colorLine.CGColor);
     CGContextStrokePath(theContext);
     
 }
 
 @end
 
-@interface BSLoadingCircle ()
+@interface MZLoadingCircle ()
 
 @end
 
-@implementation BSLoadingCircle
+@implementation MZLoadingCircle
 
 - (void)loadView {
     UIView *myView = [[UIView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
@@ -175,9 +175,9 @@
     [myView.layer addSublayer:customLayer3_];
     
     //Default colors for layers
-    _colorCustomLayer = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.7];
-    _colorCustomLayer2 = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.5];
-    _colorCustomLayer3 = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.3];
+    _colorCustomLayer = [UIColor colorWithWhite:0.2 alpha:1];
+    _colorCustomLayer2 = [UIColor colorWithWhite:0.4 alpha:1];
+    _colorCustomLayer3 = [UIColor colorWithWhite:0.6 alpha:1];
     
     self.view = myView;
 }

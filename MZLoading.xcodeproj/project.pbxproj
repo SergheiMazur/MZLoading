@@ -22,7 +22,7 @@
 		73C4673918224A0B003BC7C3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73C4671818224A0B003BC7C3 /* UIKit.framework */; };
 		73C4674118224A0B003BC7C3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 73C4673F18224A0B003BC7C3 /* InfoPlist.strings */; };
 		73C4674318224A0B003BC7C3 /* MZLoadingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 73C4674218224A0B003BC7C3 /* MZLoadingTests.m */; };
-		73C4674E18224A3E003BC7C3 /* BSLoadingCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 73C4674D18224A3E003BC7C3 /* BSLoadingCircle.m */; };
+		73C4674E18224A3E003BC7C3 /* MZLoadingCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 73C4674D18224A3E003BC7C3 /* MZLoadingCircle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,8 +56,8 @@
 		73C4673E18224A0B003BC7C3 /* MZLoadingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MZLoadingTests-Info.plist"; sourceTree = "<group>"; };
 		73C4674018224A0B003BC7C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		73C4674218224A0B003BC7C3 /* MZLoadingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZLoadingTests.m; sourceTree = "<group>"; };
-		73C4674C18224A3E003BC7C3 /* BSLoadingCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSLoadingCircle.h; sourceTree = "<group>"; };
-		73C4674D18224A3E003BC7C3 /* BSLoadingCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSLoadingCircle.m; sourceTree = "<group>"; };
+		73C4674C18224A3E003BC7C3 /* MZLoadingCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZLoadingCircle.h; sourceTree = "<group>"; };
+		73C4674D18224A3E003BC7C3 /* MZLoadingCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZLoadingCircle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,8 +162,8 @@
 		73C4674F18224CC1003BC7C3 /* Loading */ = {
 			isa = PBXGroup;
 			children = (
-				73C4674C18224A3E003BC7C3 /* BSLoadingCircle.h */,
-				73C4674D18224A3E003BC7C3 /* BSLoadingCircle.m */,
+				73C4674C18224A3E003BC7C3 /* MZLoadingCircle.h */,
+				73C4674D18224A3E003BC7C3 /* MZLoadingCircle.m */,
 			);
 			name = Loading;
 			sourceTree = "<group>";
@@ -268,7 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73C4672E18224A0B003BC7C3 /* MZViewController.m in Sources */,
-				73C4674E18224A3E003BC7C3 /* BSLoadingCircle.m in Sources */,
+				73C4674E18224A3E003BC7C3 /* MZLoadingCircle.m in Sources */,
 				73C4672118224A0B003BC7C3 /* main.m in Sources */,
 				73C4672518224A0B003BC7C3 /* MZAppDelegate.m in Sources */,
 			);
@@ -491,6 +491,7 @@
 				73C4674818224A0B003BC7C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		73C4674918224A0B003BC7C3 /* Build configuration list for PBXNativeTarget "MZLoadingTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +500,7 @@
 				73C4674B18224A0B003BC7C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

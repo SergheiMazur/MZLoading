@@ -7,10 +7,10 @@
 //
 
 #import "MZViewController.h"
-#import "BSLoadingCircle.h"
+#import "MZLoadingCircle.h"
 
 @interface MZViewController (){
-    BSLoadingCircle *loadingCircle;
+    MZLoadingCircle *loadingCircle;
 }
 
 @property(weak,nonatomic) IBOutlet UIButton *showLoading;
@@ -36,12 +36,12 @@
 
 -(void)showLoadingMode {
     if (!loadingCircle) {
-        loadingCircle = [[BSLoadingCircle alloc]initWithNibName:nil bundle:nil];
+        loadingCircle = [[MZLoadingCircle alloc]initWithNibName:nil bundle:nil];
         loadingCircle.view.backgroundColor = [UIColor clearColor];
         
         /*Colors for layers
         loadingCircle.colorCustomLayer = [UIColor redColor];
-        loadingCircle.colorCustomLayer2 = [UIColor blackColor];
+        loadingCircle.colorCustomLayer2 = [UIColor blueColor];
         loadingCircle.colorCustomLayer3 = [UIColor yellowColor];
         */
         
