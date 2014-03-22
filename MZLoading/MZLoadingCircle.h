@@ -20,8 +20,8 @@ CustomLayer2 *customLayer2_;
 CustomLayer3 *customLayer3_;
 }
 
-@property (weak,nonatomic) UIColor *colorCustomLayer;
-@property (weak,nonatomic) UIColor *colorCustomLayer2;
-@property (weak,nonatomic) UIColor *colorCustomLayer3;
+@property (strong,nonatomic) UIColor *colorCustomLayer;
+@property (strong,nonatomic) UIColor *colorCustomLayer2;
+@property (strong,nonatomic) UIColor *colorCustomLayer3;
 
 @end
